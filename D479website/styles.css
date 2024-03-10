@@ -1,0 +1,396 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+.navbar {
+    padding-left: 5px;
+    background: sandybrown;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar__container {
+   display: flex;
+   justify-content: space-between;
+   height: 80px;
+   z-index: 1;
+   width: 100%;
+   max-width: 1300px; 
+   margin: 0 auto;
+   padding: 0 50 px;
+}
+
+.navbar__menu{
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar__item{
+    height: 80px;
+}
+
+.navbar__links{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+}
+
+.navbar__links:hover{
+    color:black;
+}
+
+
+.navbar__item.active {
+  color: #f0f0f0; 
+  background-color: #eb8d40; 
+  font-weight: bold;
+}
+
+/* main section*/
+
+.main__container {
+    background-image: url('images/IslandPic.jpg');
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin: auto;
+    height: 829px;
+    background-color: aliceblue; 
+    z-index: 1;
+    max-width: 20000px;
+    padding: 0 50px;     
+}
+
+.main__banner {
+  color:#fff;
+  position: relative;
+  top: 5%;
+  width: 28%;
+  height: 68%;
+  align-items: center;
+}
+
+.main__overlay{
+  color:#050505;
+  position: relative;
+  left: 70%;
+  width: 28%;
+  height: 85%;
+  text-align: center;
+  background-color: rgba(69, 161, 214, 0.9); /* Semi-transparent background color */
+  background-image:linear-gradient(to top,white, #f4a460); 
+  align-items: center;
+  justify-content: center;
+}
+
+.main__banner h1 {
+    font-size: 4rem;
+    background-color: #b7b4e2;
+    background-image: linear-gradient(to top, #f4a460, white);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+}
+
+    .main__banner h2 {
+    font-size: 3rem;
+    background-color: #f4a460;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+}
+
+    .main__banner h3 {
+    font-size: 5rem;
+    background-color: #f4a460;
+    background-image: linear-gradient(to top, #f4a460, white);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;  
+  }
+
+  .main__content p {
+    padding: 10px;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    font-size: larger;
+  }
+
+  .Pages__container {
+    background-image: url('images/IslandPic.jpg');
+    background-size: cover;
+  }
+
+/*Accommodations Page*/
+
+.OtherPages__container {
+  background-image: url('images/IslandPic.jpg');
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  margin: auto;
+  height: 829px;
+  background-color: aliceblue; 
+  z-index: 1;
+  max-width: 20000px;
+  padding: 0 50px;     
+}
+
+.FishAndRice {
+  padding-left: 25px;
+  width: 340px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.section1textAccomodations {
+  color: #fff;
+  width: 100%;
+  height: 180px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  
+  font-size: larger;
+  margin-left: 25px;
+}
+
+.Grocery-image{
+  padding-left: 25px;
+  width: 340px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.BedAndBreakfast {
+  padding-left: 25px;
+  width: 340px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+
+
+/*Entertainment page*/
+
+.Beach {
+  padding-left: 25px;
+  width: 450px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.section1textEntertainment {
+  color: #fff;
+  width: 100%;
+  height: 198px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  
+  font-size: larger;
+  margin-left: 25px;
+}
+
+.City-image{
+  padding-left: 25px;
+  width: 410px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.Rainforest {
+  padding-left: 25px;
+  width: 340px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+
+/*Sightseeing page*/
+
+.Museum {
+  padding-left: 25px;
+  width: 450px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.section1textSightseeing {
+  color: #fff;
+  width: 100%;
+  height: 198px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  
+  font-size: larger;
+  margin-left: 25px;
+}
+
+.Buildings-image{
+  padding-left: 25px;
+  width: 410px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.Volcano {
+  padding-left: 25px;
+  width: 340px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+
+/*Transportation page*/
+
+.SmallAirplane {
+  padding-left: 25px;
+  width: 425px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.section1textTransportation {
+  color: #fff;
+  width: 100%;
+  height: 215px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  font-size: larger;
+  margin-left: 25px;
+}
+
+.Bus-image{
+  padding-left: 25px;
+  width: 410px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.BikeAndHelmet {
+  padding-left: 25px;
+  width: 425px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+
+/*Common Tourist Information page*/
+
+.CTI__container {
+    background-image: url('images/IslandPic.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: aliceblue; 
+      
+}
+
+.Images {
+  padding-left: 25px;
+  width: 250px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+.OtherImages {
+  padding-left: 20px;
+  width: 205px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  margin-right: 19px;
+}
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.section1textCTI {
+  color: #fff;
+  width: 100%;
+  height: 130px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  font-size: medium;
+  margin-left: 25px;
+}
